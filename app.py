@@ -1,3 +1,6 @@
+os.environ["CHROMA_DB_IMPL"] = "duckdb"
+os.environ["PERSIST_DIRECTORY"] = ".chroma_db"
+
 import os
 import re
 import time
