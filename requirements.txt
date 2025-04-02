@@ -5,3 +5,4 @@ python-dotenv
 pytube
 youtube-transcript-api
 streamlit
+pysqlite3-binary
