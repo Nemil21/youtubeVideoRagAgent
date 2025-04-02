@@ -1,3 +1,6 @@
+__import__('pysqlite3') # Required for CrewAI to work with SQLite 
+import sys 
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import os
 import re
 import time
@@ -8,10 +11,7 @@ from crewai.tools import tool
 from crewai import LLM
 from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, TranscriptsDisabled
 
-#solving sqlite error in streamlit
-__import__('pysqlite3') 
-import sys 
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 # --- Page Configuration ---
 st.set_page_config(
