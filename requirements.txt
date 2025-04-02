@@ -1,0 +1,7 @@
+crewai
+langchain
+langchain-google-genai
+python-dotenv
+pytube
+youtube-transcript-api
+streamlit
