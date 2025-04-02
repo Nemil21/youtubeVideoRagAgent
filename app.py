@@ -1,9 +1,9 @@
-os.environ["CHROMA_DB_IMPL"] = "duckdb"
-os.environ["PERSIST_DIRECTORY"] = ".chroma_db"
-
 import os
 import re
 import time
+os.environ["CHROMA_DB_IMPL"] = "duckdb"
+os.environ["PERSIST_DIRECTORY"] = ".chroma_db"
+
 import streamlit as st
 from dotenv import load_dotenv
 from crewai import Agent, Task, Crew, Process
